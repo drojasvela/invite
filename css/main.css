@@ -118,12 +118,19 @@ p {
     margin: 0 auto;
     background: url('../img/bg.svg') no-repeat 0 -100px;
     padding: 40px 16px 32px;
+    height: 100vh;
 }
 
 @media only screen and (min-width: 667px) {
     .container {
         background: url('../img/bg.svg') no-repeat 50% -100px;
     }
+}
+
+.intro {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .main-pic {
@@ -180,9 +187,54 @@ a.button {
     display: inline-block;
 }
 
+.phrase-1,
+.phrase-2 {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.phrase-1 {
+    animation: intro 4s both 1s ease-out;
+}
+
+.phrase-2 {
+    animation: intro 4s both 5s ease-out;
+}
+
+.main {
+    animation: appear-in 1s both;
+    transform-origin: center center;
+}
 
 
+@keyframes intro {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    } 40% {
+        opacity: 1;
+    } 60% {
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
 
+@keyframes appear-in {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 
 
