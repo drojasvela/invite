@@ -28,8 +28,12 @@ form.addEventListener("submit", function(event) {
   })
   .then(function(response) {
     if (response.status == 200) {
-      form.classList.add('hidden');
-      formSuccess.classList.remove('hidden');
+      formSuccess.classList.add('show-success');
+      name.value = "";
+
+      setTimeout(function(){
+        formSuccess.classList.remove('show-success');
+      }, 1500);
     }
   })
 });

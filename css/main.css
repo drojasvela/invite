@@ -249,9 +249,18 @@ a.button {
 }
 
 .form input:focus,
-.button-form:focus
- {
+.button-form:focus {
     outline: none;
+}
+
+.form-success {
+    margin: 8px auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.form-success.show-success {
+    opacity: 1;
 }
 
 .button-form {
