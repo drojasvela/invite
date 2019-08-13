@@ -236,7 +236,30 @@ a.button {
     }
 }
 
+.form {
+    display: inline-block;
+    border: 1px solid #C1C3CB;
+    border-radius: 30px;
+    padding: 4px 4px 4px 16px;
+}
 
+.form input {
+    border: none;
+    height: 48px;
+}
+
+.form input:focus,
+.button-form:focus
+ {
+    outline: none;
+}
+
+.button-form {
+    background-image: linear-gradient(47deg, #F1A8FF 7%, #FF9270 96%);
+    border-radius: 28px;
+    padding: 0 16px;
+    color: #FFF;
+}
 
 
 

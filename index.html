@@ -36,6 +36,11 @@
                     </div>
                 </div>
                 <h4 class="time-location">6pm | <a href="https://goo.gl/maps/JyR8jyzMK6cQzEJ46" target="_blank">Junto al Sea Palace Restaurant</a></h4>
+                <form action="#0" id="confirm" autocomplete="off" class="form">
+                    <input type="text" id="form-name" placeholder="Nombre">
+                    <input type="submit" value="confirmar" class="button-form">
+                </form>
+                <p class="hidden" id="form-success">Gracias por confirmar!</p>
                 <hr>
                 <p>Vamos a tomarnos unas cervezas mientras navegamos en bote por los canales de Ámsterdam y rezamos para que no llueva.</p>
                 <hr>
@@ -57,6 +62,7 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
